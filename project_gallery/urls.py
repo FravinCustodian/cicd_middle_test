@@ -22,7 +22,7 @@ from gallery import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.gallery_view, name='main'),
+    path('', views.gallery, name='main'),
     path('image/<int:pk>/', views.image_detail, name='image_detail'),
 ]
 
